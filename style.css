@@ -1,0 +1,98 @@
+:root{
+    --light-orange: #ff573d;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+/* Navbar */
+
+.navbar{
+    height: 120px;
+    padding: 30px;
+}
+
+.nav-tool{
+    gap: 40px;
+}
+
+.navbar-nav{
+    gap: 25px;
+}
+
+.nav-item-list a{
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    transition: 0.4s;
+    text-align: center;
+    font-size: 17px;
+}
+
+.nav-item-list .nav-link:hover{
+    color: white;
+    background-color: gray;
+}
+
+.nav-item-list .dropdown-menu .dropdown-item small{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 4px;
+}
+
+.nav-items .register-btn button{
+    background-color: white;
+    border: 1px solid var(--light-orange);
+    color: var(--light-orange);
+    border-radius: 7px;
+}
+
+.nav-items .register-btn button:hover{
+    background-color: var(--light-orange);
+    color: white;
+    border-radius: 7px;
+}
+
+/* main content */
+
+.main .main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.main .main-content img{
+    height: 100%;
+}
+
+.main .main-content .img-content{
+    position: absolute;
+    top: 42%;
+    left: 32%;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-content .img-content h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.main .main-content .img-content .btn-success{
+    padding: 13px 27px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+}
